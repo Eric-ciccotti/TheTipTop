@@ -1,0 +1,15 @@
+.footer-style {
+  height: 20vh;
+  margin-top: 4vh;
+}
+
+footer a {
+  color: black;
+}
+
+.footer-info {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+  display: flex !important;
+  color: brown;
+}

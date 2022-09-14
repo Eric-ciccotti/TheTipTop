@@ -1,15 +1,16 @@
-.masthead {
+.section {
   height: 100vh;
   min-height: 500px;
-  background-image: url('../assets/hand-holds-a-stainer-from-a-cup-of-tea.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: 10vh;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .bloc-content {
-  width: 50vw;
+  width: 75vw;
   padding: 5vh;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }

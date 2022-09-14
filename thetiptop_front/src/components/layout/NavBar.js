@@ -2,8 +2,11 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/logo.png';
-import '../App.css';
+import logo from '../../assets/logo.png';
+import { Router, Switch, Route } from 'react-router-dom'
+import Accueil from '../pages/Accueil'
+import Contact from '../pages/Contact'
+import '../../css/navBar.css';
 
 const NavBar = () => {
   return (
@@ -16,10 +19,22 @@ const NavBar = () => {
         >
           ThéTipTop
         </Navbar.Brand>
+        <Navbar.Brand
+          href="#home"
+          className="d-xs-block d-sm-block d-md-block d-xl-none d-lg-none"
+          bsPrefix="navbar-logo-small-device"
+        >
+          <img
+            src={logo}
+            width="40"
+            height="40"
+            className="align-top"
+            alt="React Bootstrap logo" />
+        </Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#home">Accueil</Nav.Link>
-            <Nav.Link href="#home">Boutique</Nav.Link>
+            <Nav.Link href="/home">Accueil</Nav.Link>
+            <Nav.Link href="/home">Boutique</Nav.Link>
             <Navbar.Brand
               href="#home"
               className="d-none d-md-block"
@@ -29,12 +44,11 @@ const NavBar = () => {
                 src={logo}
                 width="40"
                 height="40"
-                className=" align-top"
-                alt="React Bootstrap logo"
-              />
+                className="align-top"
+                alt="React Bootstrap logo" />
             </Navbar.Brand>
-            <Nav.Link href="#link">Contact</Nav.Link>
-            <Nav.Link href="#home">Mon compte</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/contact">Mon compte</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -44,16 +58,3 @@ const NavBar = () => {
 
 export default NavBar;
 
-<Navbar.Brand
-  href="#home"
-  className="d-none d-sm-block"
-  bsPrefix="navbar-brandd"
->
-  <img
-    src={logo}
-    width="30"
-    height="30"
-    className=" align-top"
-    alt="React Bootstrap logo"
-  />
-</Navbar.Brand>;
