@@ -6,7 +6,7 @@ export const Register = () => {
     return (
         <Container>
             <Row className="justify-content-center login-size">
-                <Col md="4" xs="12">
+                <Col md="12" lg="4">
                     <Form className="login">
                         <Row className="mb-3">
                             <Form.Group as={Col} controlId="formGridNom">

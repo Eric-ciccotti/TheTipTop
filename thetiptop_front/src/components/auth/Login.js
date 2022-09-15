@@ -6,7 +6,7 @@ export const Login = () => {
     return (
         <Container>
             <Row className="justify-content-center login-size">
-                <Col md="4" xs="12">
+                <Col md="12" lg="4">
                     <Form className="login">
                         <Form.Group className="mb-3" controlId="AdresseMail">
                             <Form.Label>Email address</Form.Label>
