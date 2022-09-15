@@ -1,0 +1,14 @@
+.login {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  box-shadow: 11px 17px 41px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 17px 41px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 17px 41px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 2vw 5vh;
+}
+
+.login-size {
+  height: 50vh;
+  align-items: center;
+}
